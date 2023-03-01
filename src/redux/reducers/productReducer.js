@@ -10,8 +10,8 @@ const initialState = {
   ],
 };
 
-export const productReducer = (state, { type, payload }) => {
-  switch (action.type) {
+export const productReducer = (state = initialState, { type, payload }) => {
+  switch (ActionTypes.type) {
     case ActionTypes.SET_PRODUCTS:
       return state;
     default:
